@@ -10,9 +10,7 @@ namespace ConsoleRabbitMQ.Sender
         {
             ConnectionFactory factory = new ConnectionFactory();
             factory.Uri = new Uri("amqps://bublpzgh:M7fqfVEcZeB_LeBPkXanh8ZajkyGxfHq@snake.rmq2.cloudamqp.com/bublpzgh");
-            //factory.RequestedHeartbeat = 15;
             factory.AutomaticRecoveryEnabled = true;
-            //var connection = factory.CreateConnection();
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
