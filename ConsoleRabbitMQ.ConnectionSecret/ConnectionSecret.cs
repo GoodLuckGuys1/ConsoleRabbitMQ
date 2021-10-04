@@ -3,10 +3,11 @@ using System;
 
 namespace ConsoleRabbitMQ.Receiver
 {
+    //Это в gitignore, но для наглядности подключения оставил здесь, userName and password по требованию
     public static class ConnectionSecret
     {
-        public const string UserName = "bublpzgh";
-        public const string Password = "yuWCvFYxC_GzUtu9bvlL42jXH2Z54DHL";
+        public const string UserName = "";
+        public const string Password = "";
 
         public static ConnectionFactory GetConnectionFactory()
         {
