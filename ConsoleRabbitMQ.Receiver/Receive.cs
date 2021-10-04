@@ -70,7 +70,7 @@ namespace ConsoleRabbitMQ.Recivier
 
         private static void listenPutQue()
         {
-            channelPost.QueueDeclare(queue: "Bye",
+            channelPut.QueueDeclare(queue: "Bye",
                                      durable: false,
                                      exclusive: false,
                                      autoDelete: false,
